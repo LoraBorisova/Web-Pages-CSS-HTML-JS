@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Apartment Inspo</title>
+</head>
+
+<body>
+    <h1>Апартамент</h1>
+    <div id="buttons">
+        <button class="btn active" onclick="filterSelection('all')">Всички</button>
+        <button class="btn" onclick="filterSelection('living-room')">Хол</button>
+        <button class="btn" onclick="filterSelection('kitchen')">Кухня</button>
+        <button class="btn" onclick="filterSelection('bedroom')">Спалня</button>
+        <button class="btn" onclick="filterSelection('bathroom')">Баня</button>
+        <button class="btn" onclick="filterSelection('hallway')">Коридор</button>
+        <button class="btn" onclick="filterSelection('balcony')">Тераса</button>
+    </div>
+    <section class="container">
+        <div class="content">
+            <h2>Вдъхновение</h2>
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/750x/82/03/29/8203290bf39e46924d5833d242d3f214.jpg" alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/8a/fb/8f/8afb8f37ba880f7676c36f9529350204.jpg"
+                alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/67/a8/f3/67a8f370c218f71e0f808a3871ddd785.jpg" alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/7d/5f/03/7d5f0399e2dd773e7b23e95e292d1181.jpg" alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/4b/1b/0b/4b1b0b025a56651269a63469227812d8.jpg" alt="">
+            <img class="filterDiv bedroom" src="https://i.pinimg.com/564x/55/b4/4e/55b44e12ed27124d6e3cfa8207881b82.jpg"
+                alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/750x/e1/44/5d/e1445d3b8162e9256c98d4a7c6a445bd.jpg" alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/5a/e1/8d/5ae18d7e915c24d873869d561bc28f84.jpg"
+                alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/74/7f/6d/747f6dec0e839e91483cfff2fe667941.jpg"
+                alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/0e/0a/61/0e0a6189906c3e94e0c2784cf1614a02.jpg"
+                alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/bd/1a/1c/bd1a1c5daae36c66315c11a0b5048a09.jpg"
+                alt="">
+            <img class="filterDiv kitchen" src="https://i.pinimg.com/564x/95/13/74/9513743ebf90fdf64feba9432d003877.jpg"
+                alt="">
+            <img class="filterDiv bedroom" src="https://i.pinimg.com/564x/33/64/d1/3364d15080d54b32dae8e35d74571ce1.jpg"
+                alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/2a/4b/36/2a4b36e55e54b4c6ba6c441ee9a4e775.jpg" alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/01/a4/05/01a4059825daa4c00c77c96d7149e0b0.jpg" alt="">
+            <img class="filterDiv bedroom" src="https://i.pinimg.com/564x/19/d6/ea/19d6eafee9153cac3985e5a920390b3e.jpg"
+                alt="">
+            <img class="filterDiv bedroom" src="https://i.pinimg.com/564x/08/34/66/083466287f4121d61c10cd5656cf34ec.jpg"
+                alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/aa/5b/2e/aa5b2e66c6fee98173ca39aa6b87f9b7.jpg" alt="">
+            <img class="filterDiv bedroom" src="https://i.pinimg.com/564x/3f/6c/cb/3f6ccb012e72e6e097bf23e6761d0fd2.jpg"
+                alt="">
+            <img class="filterDiv living-room"
+                src="https://i.pinimg.com/564x/bb/a7/f8/bba7f863dc93d9c8aaf2526d874b2026.jpg" alt="">
+            <img class="filterDiv hallway" src="https://i.pinimg.com/564x/1f/a8/e2/1fa8e2c4130c5d81bc6f4d2e0f3ee4ed.jpg"
+                alt="">
+            <img class="filterDiv hallway" src="https://i.pinimg.com/564x/98/8b/66/988b663e1626c4b974da922b9c47821b.jpg"
+                alt="">
+            <img class="filterDiv hallway" src="https://i.pinimg.com/564x/66/ac/9f/66ac9f766f8142fe853095dd6e1452db.jpg"
+                alt="">
+            <img class="filterDiv bathroom"
+                src="https://i.pinimg.com/564x/4c/57/42/4c5742148a38e2a5c4b513c67be0e589.jpg" alt="">
+            <img class="filterDiv balcony" src="https://i.pinimg.com/564x/56/ca/71/56ca71703ef186ac825cd00532608f51.jpg"
+                alt="">
+            <img class="filterDiv balcony" src="https://i.pinimg.com/564x/2a/d7/78/2ad77876df0db93b1a9178e5413835a1.jpg"
+                alt="">
+            <img class="filterDiv balcony" src="https://i.pinimg.com/564x/a5/e4/cf/a5e4cf3b55a0f2a4ea6d25c069688124.jpg"
+                alt="">
+        </div>
+        <div class="content">
+            <h2>Мебели</h2>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/sofas-armchairs/corner-sofas/landskrona-trimesten-divan-s-lezhanka/79272682"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/79272682/0.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/rugs/large-medium-rugs/vedbak-kilim-kasa-nishka-133x195-sm/20528897"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/1/variantimages/20528897/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/cabinets-display-cabinets/display-cabinets/fabrikor-vitrina/50460122"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/50460122/0.JPG" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/cabinets-display-cabinets/display-cabinets/lommarp-shkaf-sas-stakleni-vrati-86x199-sm/40383737"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/40383737/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/cushions-cushion-covers/cushion-covers/rotfjaril-kalafka-za-vazglavnitsa/30456545"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/30456545/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/cushions-cushion-covers/cushion-pads/skuggnava-vazglavnitsa-40x58-sm/90517782"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/90517782/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/cushions-cushion-covers/cushion-covers/idalinnea-kalafka-za-vazglavnitsa/20548292"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/20548292/0.JPG" alt=""></a>
+            <a class="filterDiv living-room bedroom kitchen" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/curtains-blinds/curtains/lillyana-prozrachni-zavesi-2-br-k-t/30386524"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/30386524/0.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/curtains-blinds/curtains/hilja-zavesi-2-br-k-t/90390735"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/90390735/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/curtains-blinds/curtains/sanela-zatamnyavashti-stayata-zavesi-2-br-140x300-sm/70512950"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/70512950/0.JPG" alt=""></a>
+            <a class="filterDiv living-room kitchen" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/curtains-blinds/curtains/hannalill-zavesi-2-br-k-t/20410888"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/20410888/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/products/wardrobes/freestanding-wardrobes/songesand-garderob/60375133"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/60375133/0.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/coffee-side-tables/coffee-tables/stockholm-holna-masa-180x59-sm-furnir-oreh/70239710"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/70239710/0.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/coffee-side-tables/side-tables/lunnarp-pomoshtna-masichka/60399030"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/60399030/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/table-lamps/tarnaby-nastolna-lampa/60323894"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/60323894/0.jpg" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/hallway/mirrors/full-length-mirrors/ikornnes-ogledalo-v-tsyal-rast/30298396"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/30298396/0.jpg" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/hallway/children-hooks-hangers/wall-hangers/hastviskare-stenen-organaizer-s-kuki/30555296"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/30555296/0.JPG" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/hallway/children-hooks-hangers/wall-hangers/bastua-zakachalka-s-5-kuki/80542517"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/80542517/0.JPG" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/hallway/stools-benches/tolkning-peika-s-otdelenie-za-sahranenie-rachno-izraboteno-120-sm/80512657"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/1/variantimages/80512657/0.JPG" alt=""></a>
+            <a class="filterDiv hallway kitchen" target="_blank"
+                href="https://www.ikea.bg/rooms/hallway/hallway-lighting/ceiling-lights/ceiling-lamps/virrmo-led-lampa-za-tavan/70430780"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/70430780/0.JPG" alt=""></a>
+            <a class="filterDiv hallway kitchen target=" _blank"
+                href="https://www.ikea.bg/rooms/hallway/hallway-lighting/ceiling-lights/ceiling-lamps/bogsprot-led-lampa-za-tavan/10404883"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/10404883/0.JPG" alt=""></a>
+            <a class="filterDiv living-room kitchen" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/ceiling-lights/pendant-lamps/blasverk-visyashta-lampa/60520903"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/60520903/0.JPG" alt=""></a>
+            <a class="filterDiv living-room kitchen" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/ceiling-lights/pendant-lamps/jakobsbyn-jallby-visyashta-lampa/89388125"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/1/variantimages/89388125/0.JPG" alt=""></a>
+            <a class="filterDiv kitchen" target="_blank"
+                href="https://aiko-bg.com/product-22451110004?rlv_rid=33b6c53a-ac88-4eac-89ae-9ceab7d9a208&rlv_rpid=132263&rlv_rpos=1"><img
+                    src="https://aiko-bg.com/media/catalog/product/cache/ea9648348a0cf4428f9b9bc987761390/2/E/2EHPjpkX177A58F4vappouZDfxVLYlxE_22451110004.jpg"
+                    alt=""></a>
+            <a class="filterDiv kitchen" target="_blank" href="https://aiko-bg.com/product-22451110011"><img
+                    src="https://aiko-bg.com/media/catalog/product/cache/ea9648348a0cf4428f9b9bc987761390/6/e/6eC7twxJiEjyqifnfiVfCiCWSMcbzCMn_22451110011.jpg"
+                    alt=""></a>
+            <a class="filterDiv living-room hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/laundry/wall-shelves/shelves/lack-stenen-raft/60383519"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/60383519/0.jpg" alt=""></a>
+            <a class="filterDiv living-room hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/laundry/wall-shelves/shelves/lack-stenen-raft/20383521"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/20383521/0.jpg" alt=""></a>
+            <a class="filterDiv bathroom" target="_blank"
+                href="https://www.ikea.bg/rooms/bathroom/bathroom-storage/bathroom-wall-cabinets/hemnes-ogledalen-shkaf-s-2-vrati-83x16x98sm-byalo/40217677"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/4/variantimages/40217677/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.expedo.bg/povdignato-leglo-angel-reshetka-bezplatno_119215i?v=129598i"><img
+                    src="https://www.expedo.bg/signys_images/eshop/129598.jpg?max-width=1200&amp;max-height=1200"
+                    alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/bedroom/beds/double-king-size-beds/double-beds-160x200/sagstua-leglo-168x208-sm/69268893"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/69268893/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/bedroom/bedside-tables/songesand-noshtno-shkafche-42x40-sm/70367444"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/7/variantimages/70367444/0.jpg" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://jysk.bg/domashni-potrebi/ogledala/ogledalo-nordborg-72x162-srebristo"><img
+                    src="https://cdn1.jysk.com/getimage/wd2.medium/9003" alt=""></a>
+            <a class="filterDiv kitchen" target="_blank"
+                href="https://jysk.bg/trapezariya/kukhnenski-masi/kukhnenski-masi/kukhnenska-masa-egens-90x190/270-db"><img
+                    src="https://cdn1.jysk.com/getimage/wd2.medium/115433" alt=""></a>
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/rugs/large-medium-rugs/vonsbak-kilim-kasa-nishka-170x230-sm/70528885"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/70528885/0.JPG" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://www.ikea.bg/rooms/living-room/rugs/door-mats/sjotrafik-iztrivalka-za-vrata/20551086"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/20551086/0.JPG" alt=""></a>
+            <a class="filterDiv balcony" target="_blank"
+                href="https://www.ikea.bg/products/garden-outdoor/outdoor-furniture-and-sets/outdoor-sets/2-seats/askholmen-masa-i-2-stola-za-upotreba-na-otkrito/29930059"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/3/variantimages/29930059/0.jpg" alt=""></a>
+            <a class="filterDiv balcony" target="_blank"
+                href="https://www.ikea.bg/rooms/outdoor/outdoor-flooring/runnen-gorna-podova-nastilka-za-otkrito/60518486"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/variantimages/60518486/0.JPG" alt=""></a>
+            <a class="filterDiv balcony" target="_blank"
+                href="https://www.ikea.bg/rooms/outdoor/outdoor-organising/hyllis-system/hyllis-etazherka/39401558"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/1/variantimages/39401558/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/home-office/desks/lillasen-byuro/90278277"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/90278277/0.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://jysk.bg/ofis/byura/kompbyura/byuro-egelev-50x121-db"><img
+                    src="https://cdn1.jysk.com/getimage/wd2.medium/194154" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://jysk.bg/ofis/byura/kompbyura/byuro-ry-60x110-1-chekmedzhe-db"><img
+                    src="https://cdn3.jysk.com/getimage/wd2.medium/185576" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://www.ikea.bg/rooms/home-office/gaming/utespelare-vartyasht-se-ofis-stol/10507616"><img
+                    src="https://ikeabg.azureedge.net/images/510x510/2/variantimages/10507616/0.JPG" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://praktiker.bg/bg/Parket/LAMINIRAN-PARKET-KRONO-ORIGINAL-D%C3%A0B-HARLEH/p/222167"><img
+                    src="https://praktiker.bg/medias/sys_master/he7/h26/30733943144478.jpg" alt=""></a>
+            <a class="filterDiv living-room" target="_blank"
+                href="https://praktiker.bg/bg/Za-steni-i-tavani/ASTRO-INTERIORNA-BOYa-2-5-L-OFELIYa-VITEX/p/141716"><img
+                    src="https://praktiker.bg/medias/sys_master/h6e/h81/27067588902942.jpg" alt=""></a>
+            <img class="filterDiv bedroom"
+                src="https://htmlcolorcodes.com/assets/images/colors/dark-green-color-solid-background-1920x1080.png"
+                alt="">
+            <a class="filterDiv bedroom" target="_blank"
+                href="https://www.carpetmax.bg/laminiran-parket-quick-step-classic-5800/"><img
+                    src="https://www.carpetmax.bg/static/media/ups/products/main/00045450-5780.jpeg?v=0.41" alt=""></a>
+            <a class="filterDiv hallway" target="_blank"
+                href="https://praktiker.bg/bg/Za-steni-i-tavani/ASTRO-INTERIORNA-BOYa-2-5-L-PANDORA-VITEX/p/141720"><img
+                    src="https://praktiker.bg/medias/sys_master/h7a/hf4/26931136954398.jpg" alt=""></a>
+        </div>
+    </section>
+
+    <script src="filter.js"></script>
+</body>
+
+</html>

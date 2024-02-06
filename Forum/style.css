@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --body-color: #F7EDE2;
+    --main-section: #F59F9D;
+    --post-color: #F8DCD8;
+    --post-by-color: #84A59D;
+    --main-buttons: #F6BD60;
+    --text-color: #C94F55;
+}
+
+/* Main and body */
+
+body {
+    background-color: var(--body-color);
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-auto-rows: 1fr;
+}
+
+button {
+    background-color: var(--main-buttons);
+    border-color: #F3A932;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    color: #5D5864;
+}
+
+button:hover {
+    background-color: var(--post-by-color);
+    border-color: var(--post-by-color);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1, 1.1);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Navigation + Search */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#signup {
+    background-color: var(--post-by-color);
+    border-color: #6C9288;
+    color: #fff;
+}
+
+#signup:hover {
+    background-color: var(--main-buttons);
+    border-color: var(--main-buttons);
+    color: #5D5864;
+}
+
+nav button {
+    font-size: 20px;
+    padding: 8px 10px;
+    margin: 10px 10px 0 0;
+}
+
+input[type="text"] {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    width: 30%;
+}
+
+/* H1 */
+
+h1 {
+    margin: 10px 0 30px 20px;
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'Niconne', cursive;
+    color: #C94F55;
+    text-shadow: 2px 2px 0px var(--main-section),
+        4px 4px 0px var(--post-color),
+        6px 6px 0px var(--post-by-color),
+        8px 8px 0px var(--main-buttons),
+        10px 10px 0px #553c9a;
+}
+
+/* Discussion section */
+
+.disscussion {
+    grid-column: 1 / 2;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-section);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.post {
+    background-color: var(--post-color);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.post-by {
+    color: var(--post-by-color);
+}
+
+.post-by a {
+    color: var(--post-by-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-by a:hover {
+    text-decoration: underline;
+}
+
+.tag {
+    background-color: var(--text-color);
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.post button {
+    font-size: 16px;
+    padding: 5px 7px;
+}
+
+/* Ads */
+
+.ad {
+    margin: 15px 2px 15px 5px;
+    grid-column: 2/2;
+    background-color: var(--post-color);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+#logo {
+    margin: 3px;
+    font-size: 18px;
+    font-family: 'Anton';
+    color: #80ed99;
+    text-shadow: 2px 2px 0px #370617;
+}
+
+.ad-mobile {
+    display: none;
+}
+
+.ad p {
+    padding: 0 2px;
+    position: absolute;
+}
+
+.ad a {
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.ad a:hover {
+    text-decoration: underline;
+}
+
+.ad img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+
+footer {
+    padding: 15px;
+    background-color: var(--post-by-color);
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer ul {
+    padding-inline-start: 0;
+}
+
+footer li {
+    display: inline;
+    padding: 0 5px 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--body-color);
+    margin: 3px;
+    display: table-cell;
+    /* Add this */
+    vertical-align: middle;
+    /* Add this */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.social-media a {
+    padding: 5px;
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+}
+
+.fa-twitter:hover {
+    color: #55ACEE;
+}
+
+.fa-instagram:hover {
+    color: #C13584
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Main */
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr min-content;
+    }
+
+    /* Navigation and search */
+
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .buttons {
+        margin-bottom: 15px;
+    }
+
+    nav button {
+        font-size: 15px;
+        padding: 8px 10px;
+        margin: 0 10px 0 0;
+    }
+
+    input[type="text"] {
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px;
+        width: 55%;
+    }
+
+    /* H1 */
+
+    h1 {
+        font-size: 60px;
+    }
+
+    /* Discussion */
+
+    .disscussion {
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+
+    .tag {
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    /* Ads */
+
+    .ad {
+        display: none;
+    }
+
+    .ad-mobile {
+        display: inline;
+        position: relative;
+        grid-row: 2/2;
+        background-color: var(--post-color);
+        margin-bottom: 10px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .ad-mobile p {
+        position: absolute;
+    }
+
+    .ad-mobile img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin: 0;
+        font-size: 20px;
+    }
+}
